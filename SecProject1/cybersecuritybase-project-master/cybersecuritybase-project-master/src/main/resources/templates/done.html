@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Thank you!</title>
+    </head>
+    <body>
+
+        <h1>You have been logged in!</h1>
+
+        <h3>Your account information (id, name, password):</h3>
+        
+        <ul>
+            <li th:each="item2 : ${list2}">
+                <span th:text="${item2}">hello world!</span>
+            </li>
+        </ul>
+        
+        <form action="#" th:action="@{/done}" method="POST">
+            <p><label for="name">Name</label>: <input type="text" name="typedName" id="typedName"/></p>
+            <p><label for="password">New password</label>: <input type="text" name="typedPassword" id="typedPassword"/></p>
+            <p><input type="submit" value="Change password" /></p>
+        </form>
+        
+        <form action="#" th:action="@{/form}">
+            <p><input type="submit" value="Log out" /></p>
+        </form>
+
+    </body>
+</html>

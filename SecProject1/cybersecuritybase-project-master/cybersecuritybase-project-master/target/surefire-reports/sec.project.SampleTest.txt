@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: sec.project.SampleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.124 sec <<< FAILURE! - in sec.project.SampleTest
+signupAddsDataToDatabase(sec.project.SampleTest)  Time elapsed: 0.774 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at sec.project.SampleTest.signupAddsDataToDatabase(SampleTest.java:40)
+
